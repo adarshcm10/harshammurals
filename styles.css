@@ -72,7 +72,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url('/images/bg-hero.png');
+    background-image: url('https://github.com/adarshcm10/harshammurals/blob/main/images/bg-hero.png?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@
 .about-section {
     padding: 80px 20px;
     background-color: #FAF6F1;
-    background-image: url('/images/about-bg.png');
+    background-image: url('https://github.com/adarshcm10/harshammurals/blob/main/images/about-bg.png?raw=true');
     background-size: cover;
     background-position: center;
 }
@@ -389,7 +389,7 @@
 
 .viewmore-section {
     padding: 80px 20px;
-    background-image: url('/images/bg-hero.png');
+    background-image: url('https://github.com/adarshcm10/harshammurals/blob/main/images/bg-hero.png?raw=true');
     background-size: cover;
     background-position: center;
     margin: 5rem;
