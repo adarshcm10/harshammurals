@@ -166,7 +166,7 @@
     transform: translateX(-50%);
     width: 200%;
     max-width: 1000px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .section-description {
@@ -298,14 +298,16 @@
     display: block;
 }
 
-.underline-img {
+.underline-img-learn {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 200%;
     max-width: 700px;
-    margin-top: 10px;
+    margin-top:0px;
 }
+
+
 
 .offline-classes {
     display: grid;
@@ -365,19 +367,20 @@
     gap: 10px;
     background-color: #B87333;
     color: white;
-    padding: 12px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.7rem;
     transition: all 0.3s ease;
-    border: 1px solid #B87333; /* Add border to match read-more-btn */
-    cursor: pointer; /* Ensure it is recognized as a button */
+    border: 1px solid #B87333; 
+    cursor: pointer; 
 }
 
 .join-btn:hover {
     background-color: #3a240f;
-    color: #fff; /* Ensure text color changes on hover */
-    border-color: #3a240f; /* Ensure border color changes on hover */
+    color: #fff; 
+    border-color: #3a240f; 
 }
 
 .cart-icon {
@@ -549,7 +552,7 @@
 }
 
 .footer-bottom {
-    height: 2rem;
+    height: 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -618,6 +621,9 @@
 
     .underline-img {
         max-width: 500px;
+    }
+    .underline-img-learn {
+        max-width: 450px;
     }
     .about-card {
         flex-direction: column-reverse;
@@ -772,20 +778,25 @@
         justify-content: center;
         padding: 10px 20px;
     }
+    
     .viewmore-section {
         padding: 50px 15px;
         margin: 2rem;
-        border-radius: 20px;
+        border-radius: 0px;
     }
 
 
-    
     .viewmore-grid {
         grid-template-columns: 1fr;
+    }
+
+    .viewmore-container {
+        border-radius: 0px;
     }
     
     .viewmore-item {
         height: 200px;
+        border-radius: 0px;
     }
     
     .viewmore-buttons {
@@ -803,8 +814,14 @@
     }
 
     .footer-bottom {
-        padding: 1rem;
+        padding: 0px;
+        margin-bottom: -30px;
         margin-top: 0;
+        gap: 0px;
+    }
+
+    .underline-img-learn {
+        max-width: 400px;
     }
 
 }
