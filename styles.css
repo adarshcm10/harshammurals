@@ -72,7 +72,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url('https://github.com/adarshcm10/harshammurals/blob/main/images/bg-hero.png?raw=true');
+    background-image: url('/images/bg-hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@
 .about-section {
     padding: 80px 20px;
     background-color: #FAF6F1;
-    background-image: url('https://github.com/adarshcm10/harshammurals/blob/main/images/about-bg.png?raw=true');
+    background-image: url('/images/about-bg.png');
     background-size: cover;
     background-position: center;
 }
@@ -389,7 +389,7 @@
 
 .viewmore-section {
     padding: 80px 20px;
-    background-image: url('https://github.com/adarshcm10/harshammurals/blob/main/images/bg-hero.png?raw=true');
+    background-image: url('/images/bg-hero.png');
     background-size: cover;
     background-position: center;
     margin: 5rem;
@@ -497,20 +497,20 @@
 }
 
 .footer {
-    background-color: #b89c7b;
     color: #fff;
     padding: 20px 10px;
     text-align: center;
 }
 
 .footer-container {
+    background-color: #b89c7b;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 3rem;
 }
 
 .footer-left {
@@ -526,16 +526,16 @@
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
 }
 
 .footer-right {
-    flex: 3;
+    flex: 2;
     text-align: left;
     flex-direction: row;
     display: flex;
-    gap: 10px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -549,10 +549,8 @@
     flex: 1;
 }
 
-
-
 .footer-bottom {
-    height: 5rem;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -778,7 +776,10 @@
     .viewmore-section {
         padding: 50px 15px;
         margin: 2rem;
+        border-radius: 20px;
     }
+
+
     
     .viewmore-grid {
         grid-template-columns: 1fr;
@@ -801,4 +802,10 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .footer-bottom {
+        padding: 1rem;
+        margin-top: 0;
+    }
+
 }
