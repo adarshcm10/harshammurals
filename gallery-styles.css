@@ -1,0 +1,365 @@
+/* gallery-styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-header img {
+    max-height: 70px; 
+    width: auto;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ff0066;
+}
+
+.nav-menu a.active {
+    color: #ff0066;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+body {
+    padding-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #664B36;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-title span {
+    color: #664B36;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.decor-left, .decor-right {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: -2rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-btn {
+    padding: 0.4rem 1rem;
+    background-color: #B27C56;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-btn:hover {
+    background-color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.gallery-item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.popup-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+.popup-details {
+    margin-top: 20px;
+    
+}
+
+.popup-details h2 {
+    margin-bottom: 10px;
+}
+
+.popup-details p {
+    margin: 5px 0;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-header img {
+        padding-left: 20px;
+        height: 50px;
+    }
+    
+    .hamburger {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0;
+        transition: left 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title span {
+        font-size: 1rem;
+    }
+
+    .decor-left, .decor-right {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: -1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .sub-description {
+        font-size: 0.9rem;
+    }
+
+    /* .gallery-btn {
+        padding: 0.8rem 1.5rem;
+        background-color: #B27C56;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .gallery-btn:hover {
+        background-color: #333;
+    } */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 480px) { 
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo-header img {
+        max-height: 50px; 
+        width: auto;
+        padding-left: 20px;
+    }
+    
+    .hamburger {
+        padding-right: 20px;
+    }
+}

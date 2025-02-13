@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .logo img {
-    max-height: 50px; 
+    max-height: 70px; 
     width: auto;
 }
 .header {
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding-top: 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
